@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from "react";
+import Menu from "./components/menu/Menu";
+import Slide from "./components/Slide/Slide";
+import Advertising from "./components/advertising/Advertising";
+import Notice from "./components/notice/Notice";
+import CatalogOfProducts from "./components/CatalogOfProducts/CatalogOfProducts";
+import NoticeSecond from "./components/Notice_Second/NoticeSecond";
+import Footer from "./components/Footer/Footer";
+import ListMenu from "./components/menu/Listmenu/ListMenu";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      const [showAllMenu, setStatus] = useState(false);
+      return (
+        <div style={{backgroundColor:"#E5E5E5"}}>
+          <Menu showAllMenu={showAllMenu} setStatus={setStatus}/>
+          {showAllMenu ?  <ListMenu/> : null}
+          <Slide/>
+          <Advertising/>
+          <CatalogOfProducts/>
+          <NoticeSecond/>
+          <Footer/>
+        </div>
+      );
 }
 
 export default App;

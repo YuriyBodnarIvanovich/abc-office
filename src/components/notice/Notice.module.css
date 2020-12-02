@@ -1,0 +1,193 @@
+
+@media only screen and (min-width: 663px) {
+    .container{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 0.53fr;
+        justify-content: center;
+    }
+    .title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* or 56px */
+
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .title b{
+        font-size: 40px;
+    }
+
+    .containerOfChangeProducts{
+        width: 780px;
+        height: 130px;
+        display: grid;
+        grid-template-columns: minmax(320px,1fr) minmax(320px,1fr);
+        grid-template-rows: minmax(120px, auto) minmax(120px, auto);
+        grid-gap: 30px;
+        margin-top: 40px;
+    }
+
+    .containerOfChangeProducts p{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+
+        color: #000000;
+    }
+
+    .activeProduct{
+        width: 370px;
+        height: 120px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-top: 20px;
+        border-color: #46BFF3;
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        background-color: white;
+    }
+    .activeProduct p{
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    .activeProduct:hover{
+        cursor: pointer;
+    }
+
+    .passiveProduct{
+        width: 370px;
+        height: 120px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-top: 20px;
+        border-color: #DAD9D9;
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        /*grid-gap: 20px;*/
+    }
+    .passiveProduct p{
+        font-size: 22px;
+        margin-left: 15px;
+    }
+    .passiveProduct:hover{
+        cursor: pointer;
+    }
+
+    .fild{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 787px) {
+    .container{
+        width: 100%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 0.53fr;
+        justify-content: center;
+    }
+    .title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* or 56px */
+
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .title b{
+        font-size: 40px;
+    }
+
+    .containerOfChangeProducts{
+        width: 100%;
+        height: 270px;
+        display: grid;
+        grid-template-columns: minmax(320px,1fr);
+        grid-template-rows: 120px 120px;
+        grid-gap: 30px;
+        margin-top: 40px;
+    }
+
+    .containerOfChangeProducts p{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+
+
+        color: #000000;
+    }
+
+    .activeProduct{
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-top: 20px;
+        border-color: #46BFF3;
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        background-color: white;
+    }
+    .activeProduct p{
+        font-size: 22px;
+    }
+    .activeProduct:hover{
+        cursor: pointer;
+    }
+
+    .passiveProduct{
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-top: 20px;
+        border-color: #DAD9D9;
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-gap: 20px;
+    }
+    .passiveProduct p{
+        font-size: 22px;
+    }
+    .passiveProduct:hover{
+        cursor: pointer;
+    }
+
+    .fild{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+}

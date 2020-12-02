@@ -1,0 +1,600 @@
+
+@media only screen and (min-width: 1180px) {
+    .forNotices{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 585px 585px;
+        justify-content: center;
+        grid-gap: 30px;
+    }
+    .secondNotice{
+        width: 570px;
+        height: 481px;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        padding-top: 52px;
+        padding-left: 71px;
+        color: white;
+    }
+    .firstTitle{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* identical to box height, or 56px */
+        color: #FFFFFF;
+        /*margin-top: 52px;*/
+        margin-left: 21px;
+    }
+
+    .second_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 135%;
+        /* or 27px */
+        margin-top: 25px;
+
+
+
+
+        color: #FFFFFF;
+    }
+
+    .second_add{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 135%;
+        /* or 27px */
+
+
+        color: #FFFFFF;
+    }
+
+    .newPost_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+    .get_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .novaPosta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+
+    }
+    .novaPosta text{
+        margin-top: 25px;
+    }
+    .novaPosta img{
+        margin-top: 7px;
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1200px;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .firstNotice{
+        width: 1184px;
+        height: 387px;
+        background-repeat: no-repeat;
+        /*border: 2px solid #B8B8B8;*/
+        background-size: 100% 387px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        color: white;
+        padding-top: 89px;
+    }
+
+    .firstNotice_Title_one{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        color: #FFFFFF;
+        margin-left: 71px;
+        /*margin-top: 89px;*/
+        margin-bottom: 26px;
+    }
+
+    .firstNotice_Title_two{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 71px;
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+    .marginLeft_div_first{
+    /*style={{width:"400px", marginLeft:"21px"}}*/
+        width: 400px;
+        margin-left: 21px;
+    }
+    .marginLeft_div_second{
+        width:467px;
+        margin-left:21px;
+    }
+}
+
+@media only screen and (max-width: 1179px) {
+    .forNotices{
+        width: 820px;
+        height: 1150px;
+        display: grid;
+        grid-template-columns: 760px;
+        grid-template-rows: 540px 540px;
+        grid-row-gap: 30px;
+        /*margin-top: 10px;*/
+    }
+    .secondNotice{
+        width: 820px;
+        height: 540px;
+        /*background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 50px;
+        color: white;
+        /*margin-top: 20px;*/
+    }
+    .firstNotice{
+        width: 1170px;
+        height: 387px;
+        background-repeat: no-repeat;
+        /*border: 2px solid #B8B8B8;*/
+        background-size: 100% 387px;
+        /*margin-bottom: 30px;*/
+        box-sizing: border-box;
+        color: white;
+        padding-top: 89px;
+    }
+
+    .firstNotice_Title_one{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        color: #FFFFFF;
+        /*margin-left: 20px;*/
+        /*margin-top: 89px;*/
+        margin-bottom: 26px;
+    }
+
+    .firstNotice_Title_two{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /*margin-left: 71px;*/
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+    .firstTitle{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* identical to box height, or 56px */
+
+        /*margin-left: 21px;*/
+        color: #FFFFFF;
+    }
+
+    .second_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 135%;
+        /* or 27px */
+        margin-top: 25px;
+
+        color: #FFFFFF;
+    }
+
+    .second_add{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 135%;
+        /* or 27px */
+
+
+        color: #FFFFFF;
+    }
+
+    .newPost_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+    .get_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .novaPosta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+
+    }
+    .novaPosta text{
+        margin-top: 30px;
+    }
+    .novaPosta img{
+        /*margin-top: 240px;*/
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        /*grid-template-columns: 0.7fr;*/
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .firstNotice{
+        width: 100%;
+        height: 387px;
+        background-repeat: no-repeat;
+        /*border: 2px solid #B8B8B8;*/
+        background-size: 100% 387px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 60px;
+        color: white;
+    }
+
+    .firstNotice h1{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* or 56px */
+
+
+        color: #FFFFFF;
+    }
+    .firstNotice p{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+
+    }
+}
+
+
+@media only screen and (max-width: 851px) {
+    .firstTitle{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 139.7%;
+        /* identical to box height, or 56px */
+
+
+        color: #FFFFFF;
+    }
+
+    .second_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 135%;
+        /* or 27px */
+
+
+        color: #FFFFFF;
+    }
+
+    .second_add{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 135%;
+        /* or 27px */
+
+
+        color: #FFFFFF;
+    }
+
+    .newPost_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+    }
+
+    .get_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .forNotices{
+        width: 520px;
+        height: 1300px;
+        display: grid;
+        grid-template-columns: 40px;
+        grid-template-rows: 600px 600px;
+        grid-row-gap: 30px;
+        /*margin-top: 10px;*/
+    }
+    .secondNotice{
+        width: 520px;
+        height: 600px;
+        /*background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        box-sizing: border-box;
+        padding-top: 100px;
+        padding-left: 50px;
+        color: white;
+        /*margin-top: 20px;*/
+    }
+    .firstNotice{
+        width: 520px;
+        height: 387px;
+        background-repeat: no-repeat;
+        /*border: 2px solid #B8B8B8;*/
+        background-size: 100% 387px;
+        /*margin-bottom: 30px;*/
+        box-sizing: border-box;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .firstNotice_Title_one{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 139.7%;
+        color: #FFFFFF;
+        /*margin-left: 20px;*/
+        /*margin-top: 89px;*/
+        margin-bottom: 26px;
+    }
+
+    .firstNotice_Title_two{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /*margin-left: 71px;*/
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+    .novaPosta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+
+    }
+    .novaPosta text{
+        margin-top: 28px;
+    }
+    .novaPosta img{
+        margin-top: 7px;
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 530px) {
+    .forNotices{
+        width: 340px;
+        height: 900px;
+        display: grid;
+        grid-template-columns: 340px;
+        grid-template-rows: 385px 470px;
+
+        /*margin-top: 10px;*/
+    }
+    .secondNotice{
+        width: 340px;
+        height: 470px;
+        /*background-repeat: no-repeat;*/
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: 100% 387px;
+        box-sizing: border-box;
+        /*padding-top: 1px;*/
+        padding-left: 20px;
+        color: white;
+        padding-top: 50px;
+        /*margin-top: 20px;*/
+    }
+
+    .secondNotice p{
+        font-size: 14px;
+    }
+
+    .firstNotice{
+        width: 340px;
+        height: 187px;
+        background-repeat: no-repeat;
+        /*border: 2px solid #B8B8B8;*/
+        background-size: 100% 187px;
+        /*margin-bottom: 30px;*/
+        box-sizing: border-box;
+        color: white;
+        padding-top: 20px;
+    }
+
+    .firstNotice_Title_one{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 139.7%;
+        color: #FFFFFF;
+        /*margin-left: 20px;*/
+        /*margin-top: 89px;*/
+        margin-bottom: 26px;
+    }
+
+    .firstNotice_Title_two{
+        font-family: SF Pro Text;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        /*margin-left: 71px;*/
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+
+    .firstTitle{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        /*line-height: 139.7%;*/
+        /* identical to box height, or 56px */
+        margin-left: 100px;
+
+
+        color: #FFFFFF;
+    }
+
+    .second_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        /*line-height: 135%;*/
+        /* or 27px */
+        /*margin-left: 40px;*/
+
+
+        color: #FFFFFF;
+    }
+
+    .second_add{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 135%;
+        /* or 27px */
+        /*margin-left: 30px;*/
+
+
+        color: #FFFFFF;
+    }
+
+    .newPost_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+        /* identical to box height */
+        margin-left: 10px;
+        /*margin-top: 30px;*/
+        /*margin-bottom: 20px;*/
+        color: #FFFFFF;
+    }
+
+    .get_title{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .novaPosta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+        /*padding-top: 30px;*/
+
+    }
+    .novaPosta text{
+        /*margin-top: 14px;*/
+        /*margin-top: 14px;*/
+        /*margin-bottom: 20px;*/
+    }
+    .novaPosta img{
+        margin-top: 10px;
+    }
+
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+
+
+}
+
+
+
+
+
