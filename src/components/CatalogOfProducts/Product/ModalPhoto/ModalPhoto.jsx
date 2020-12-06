@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ModalStyle from './ModalPhoto.module.css'
 import ProductsStyle from "../Product.module.css";
 import ModalProduct from '../ModalProduct/ModalProduct';
@@ -21,8 +21,10 @@ const ModalPhoto = (props) =>{
             }
         }
 
-
     }
+
+    let [amount, setAmount] = useState(props.amount);
+
     return(
         <div className={ModalStyle.container}>
             <div className={ModalStyle.container_OfContent}>
@@ -41,9 +43,7 @@ const ModalPhoto = (props) =>{
                             <p onClick={()=>{last()}}>{"<"}</p>
                         </div>
                         <div className={ModalStyle.forImg}>
-                            {props.kindOfProduct ? <img src={props.data.img[props.indexOfMainPhoto].src}/>:
-                                <img src={props.data.colors[props.indexOfColor].arr[props.indexOfMainPhoto].src}/>
-                            }
+                            <img src={props.data.img[props.indexOfMainPhoto].src}/>
                         </div>
                         <div className={ModalStyle.next}>
                             <p onClick={()=>{next()}}>{">"}</p>
@@ -57,13 +57,13 @@ const ModalPhoto = (props) =>{
                             <div >
                                 <div className={ModalStyle.changeAmountOfProductContainer}>
                                     <div className={ProductsStyle.minus}>
-                                        <b>-</b>
+                                        <b onClick={()=>{if(amount > 1){setAmount(amount -=1)}}}>-</b>
                                     </div>
                                     <div className={ProductsStyle.boxOfNumber}>
-                                        <b>{props.data.amount}</b>
+                                        <b>{amount}</b>
                                     </div>
                                     <div className={ProductsStyle.plus}>
-                                        <b>+</b>
+                                        <b onClick={()=>{setAmount(amount +=1)}}>+</b>
                                     </div>
                                 </div>
                             </div>

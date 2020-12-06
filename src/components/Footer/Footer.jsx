@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterStyle from './Footer.module.css';
-
+import {useSelector} from "react-redux";
 import local from '../../photos/footer/Group 69.png';
 import cool from '../../photos/footer/Vector.png';
 import message from '../../photos/footer/Group 37.png';
@@ -10,14 +10,19 @@ import MenuStyle from "../menu/Listmenu/ListMenu.module.css";
 import downloadButton from "../../photos/pdf 1.svg";
 
 const Footer = () =>{
+
+    const languageData = useSelector(state=>state.languageData);
+
     return(
-        <div className={FooterStyle.container}>
+        <div className={FooterStyle.container} name="Footer">
             <div className={FooterStyle.content}>
                 <div className={FooterStyle.firstBlock}>
                     <div className={FooterStyle.contact}>
                         <div className={FooterStyle.contactContainer}>
                             <img src={local} style={{height:"20px"}}/>
-                            <text>г. Киев, ул. Светлицкого 35, оф. 510</text>
+                            <text>
+                                {languageData.secondNotice.secondNotice.getByYourSelf.second[languageData.indexOfLanguage]}
+                            </text>
                         </div>
                         <div className={FooterStyle.contactContainer}>
                             <img src={cool} style={{marginTop:"7px"}}/>
@@ -35,33 +40,37 @@ const Footer = () =>{
                 </div>
                 <div className={FooterStyle.secondBlock}>
                     <div className={FooterStyle.itemsDataContainer}>
-                        <p>Каталог товаров</p>
-                        <p>Преимущества</p>
-                        <p>Доставка и Оплата</p>
-                        <p>Контакты</p>
+                        <p>{languageData.menu.ProductCatalog[languageData.indexOfLanguage]}</p>
+                        <p>{languageData.menu.Benefits[languageData.indexOfLanguage]}</p>
+                        <p>{languageData.menu.DeliveryAndPayment[languageData.indexOfLanguage]}</p>
+                        <p>{languageData.menu.Contacts[languageData.indexOfLanguage]}</p>
                     </div>
-                    <h3 className={FooterStyle.newTitle}>Актуальный прайс-лист</h3>
+                    <h3 className={FooterStyle.newTitle}>
+                        {languageData.footer.DownloadPrice.mainTitle[languageData.indexOfLanguage]}
+                    </h3>
                     <p className={FooterStyle.addTitle}>
-                        Вы можете скачать прайс на весь ассортимент продукции ABC Office
+                        {languageData.footer.DownloadPrice.firstTitle[languageData.indexOfLanguage]}
                     </p>
                     <div className={MenuStyle.downloadButton}>
                         <img src={downloadButton}/>
-                        <text> Скачать прайс</text>
+                        <text>{languageData.footer.DownloadPrice.button[languageData.indexOfLanguage]}</text>
                     </div>
                 </div>
             </div>
             {/*--------------------------------------*/}
             <div className={FooterStyle.avg_Footer}>
                 <div className={FooterStyle.itemsDataContainer}>
-                    <p>Каталог товаров</p>
-                    <p>Преимущества</p>
-                    <p>Доставка и Оплата</p>
-                    <p>Контакты</p>
+                    <p>{languageData.menu.ProductCatalog[languageData.indexOfLanguage]}</p>
+                    <p>{languageData.menu.Benefits[languageData.indexOfLanguage]}</p>
+                    <p>{languageData.menu.DeliveryAndPayment[languageData.indexOfLanguage]}</p>
+                    <p>{languageData.menu.Contacts[languageData.indexOfLanguage]}</p>
                 </div>
                 <div className={FooterStyle.contact}>
                     <div className={FooterStyle.contactContainer}>
                         <img src={local} style={{height:"20px"}}/>
-                        <text>г. Киев, ул. Светлицкого 35, оф. 510</text>
+                        <text>
+                            {languageData.secondNotice.secondNotice.getByYourSelf.second[languageData.indexOfLanguage]}
+                        </text>
                     </div>
                     <div className={FooterStyle.contactContainer}>
                         <img src={cool} style={{marginTop:"7px"}}/>

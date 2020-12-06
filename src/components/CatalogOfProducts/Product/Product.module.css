@@ -313,6 +313,7 @@
     /*;*/
     text-decoration: underline;
     font-size: 14px;
+    z-index: 3;
 }
 
 .look_more:hover{
@@ -414,17 +415,21 @@
 .minus{
     font-size: 22px;
     color: #B8B8B8;
+    user-select: none;
 }
 .minus:hover{
     cursor: pointer;
+    color: #46BFF3;
 }
 
 .plus{
     font-size: 22px;
-    color: #46BFF3;
+    color: #B8B8B8;
+    user-select: none;
 }
 .plus:hover{
     cursor: pointer;
+    color: #46BFF3;
 }
 
 @media only screen and (max-width: 1179px) {

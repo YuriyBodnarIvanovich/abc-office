@@ -6,21 +6,23 @@ import MaskGroup_2 from '../../photos/Group56.jpg';
 import RunVideo from '../../photos/Component.png';
 import useInterval from "@restart/hooks/cjs/useInterval";
 import mobile_photo from '../../photos/Group56.png';
-
-const slideData = [
-    {
-        imgSrc: MaskGroup,
-        text:'Особенные по многим\n' +
-            'причинам'
-    },
-    {
-        imgSrc: MaskGroup_2,
-        text: 'Лучшее решение для демонстрации идей'
-    }
-];
+import {useSelector} from "react-redux";
 
 const Slide = () =>{
+
+    const languageData = useSelector(state=>state.languageData);
     const [indexOfSlide, setIndex] = useState(0);
+
+    const slideData = [
+        {
+            imgSrc: MaskGroup,
+            text:languageData.slide.slide_one[languageData.indexOfLanguage]
+        },
+        {
+            imgSrc: MaskGroup_2,
+            text: languageData.slide.slide_two[languageData.indexOfLanguage]
+        }
+    ];
 
     const ButtonOfSlide = (props) =>{
         if(props.index === indexOfSlide){
@@ -56,13 +58,13 @@ const Slide = () =>{
         <div>
             <div className={SlideStyle.container} style={{backgroundImage:`url(${slideData[indexOfSlide].imgSrc})`}}>
                 <div className={SlideStyle.content}>
-                    <p>Офисные доски и флипчарты АВС Office</p>
+                    <p>{languageData.slide.title[languageData.indexOfLanguage]}</p>
                     <h1>{slideData[indexOfSlide].text}</h1>
                     <div className={SlideStyle.addInformation}>
-                        <button> Заказать </button>
+                        <button> {languageData.slide.toOrder[languageData.indexOfLanguage]} </button>
                         <div className={SlideStyle.runVideo}>
-                            <img  src={RunVideo} alt={'run'}/>
-                            <p>Смотреть видео</p>
+                            <img  src={RunVideo} alt={'run'} onClick={()=>{window.open("https://www.youtube.com/watch?v=au3-3BJmLAg")}}/>
+                            <p  onClick={()=>{window.open("https://www.youtube.com/watch?v=au3-3BJmLAg")}}>{languageData.slide.WatchVideo[languageData.indexOfLanguage]}</p>
                         </div>
                     </div>
                 </div>
@@ -75,14 +77,13 @@ const Slide = () =>{
             <div className={SlideStyle.container_modile} style={{backgroundImage:`url(${mobile_photo})`}}>
 
                 <div className={SlideStyle.content}>
-                    <p>Офисные доски и флипчарты АВС Office</p>
-                    <h1>Лучшее решение для демонстрации идей</h1>
-
+                    <p>{languageData.slide.title[languageData.indexOfLanguage]}</p>
+                    <h1>{languageData.slide.slide_two[languageData.indexOfLanguage]}</h1>
                     <div className={SlideStyle.addInformation}>
-                        <button> Заказать </button>
+                        <button>{languageData.slide.toOrder[languageData.indexOfLanguage]}</button>
                         <div className={SlideStyle.runVideo}>
                             <img  src={RunVideo} alt={'run'}/>
-                            <p>Смотреть видео</p>
+                            <p>{languageData.slide.WatchVideo[languageData.indexOfLanguage]}</p>
                         </div>
                     </div>
                 </div>

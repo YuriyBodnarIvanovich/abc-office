@@ -88,6 +88,12 @@
         color: #FFFFFF;
 
     }
+    .runVideo img:hover{
+        cursor: pointer;
+    }
+    .runVideo p:hover{
+        cursor: pointer;
+    }
 
     .containerOfButtonForSlides{
         width: 100%;
@@ -209,7 +215,12 @@
         font-size: 17px;
         line-height: 21px;
         color: #FFFFFF;
-
+    }
+    .runVideo img:hover{
+        cursor: pointer;
+    }
+    .runVideo p:hover{
+        cursor: pointer;
     }
 
     .containerOfButtonForSlides{
@@ -346,7 +357,12 @@
         font-size: 17px;
         line-height: 21px;
         color: #FFFFFF;
-
+    }
+    .runVideo img:hover{
+        cursor: pointer;
+    }
+    .runVideo p:hover{
+        cursor: pointer;
     }
 
     .containerOfButtonForSlides{

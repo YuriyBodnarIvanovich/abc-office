@@ -21,7 +21,7 @@
     margin-left: 43px;
     width: 51px;
     height: 17px;
-    color: white;
+    /*color: red;*/
     display: flex;
     flex-direction: row;
 }
@@ -38,7 +38,9 @@
     margin-top: 24px;
     margin-left: 5px;
 }
-
+.active{
+    color: #B8B8B8;
+}
 .downloadButton img{
     width: 20px;
     height: 20px;
@@ -72,6 +74,22 @@
     padding-left: 40px;
     position: fixed;
 }
+.container a{
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 30px;
+}
+.container a:hover{
+    cursor: pointer;
+}
 
 .container p{
     margin-left: 5px;
@@ -82,6 +100,10 @@
     line-height: 14px;
     margin-top: 30px;
     color: white;
+}
+
+.passive{
+    color: red;
 }
 
 .container p:hover{

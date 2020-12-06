@@ -108,6 +108,7 @@
     }
 
     .firstNotice_Title_one{
+        width: 800px;
         font-family: SF Pro Display;
         font-style: normal;
         font-weight: 600;
@@ -120,6 +121,7 @@
     }
 
     .firstNotice_Title_two{
+        width: 700px;
         font-family: SF Pro Text;
         font-style: normal;
         font-weight: 500;
@@ -175,6 +177,7 @@
     }
 
     .firstNotice_Title_one{
+        width: 600px;
         font-family: SF Pro Display;
         font-style: normal;
         font-weight: 600;
@@ -187,6 +190,7 @@
     }
 
     .firstNotice_Title_two{
+        width: 550px;
         font-family: SF Pro Text;
         font-style: normal;
         font-weight: 500;
@@ -399,6 +403,7 @@
     }
 
     .firstNotice_Title_one{
+        width: 400px;
         font-family: SF Pro Display;
         font-style: normal;
         font-weight: 600;
@@ -411,6 +416,7 @@
     }
 
     .firstNotice_Title_two{
+        width: 400px;
         font-family: SF Pro Text;
         font-style: normal;
         font-weight: 500;
@@ -485,6 +491,7 @@
     }
 
     .firstNotice_Title_one{
+        width: 280px;
         font-family: SF Pro Display;
         font-style: normal;
         font-weight: 600;
@@ -497,6 +504,7 @@
     }
 
     .firstNotice_Title_two{
+        width: 280px;
         font-family: SF Pro Text;
         font-style: normal;
         font-weight: 500;

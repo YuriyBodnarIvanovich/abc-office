@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import CatalogStyle from './CatalogOfProducts.module.css';
 
-
-// import slide_1 from '../../photos/Slide/KMshelf.png';
-// import slide_2 from '../../photos/Slide/main.png';
-// import slide_3 from '../../photos/Slide/KM hooks.png';
-
 import slide_1 from '../../photos/new_Photo/Slide/main.png';
 import slide_2 from '../../photos/new_Photo/Slide/main1.png';
 import slide_3 from '../../photos/new_Photo/Slide/main3.png';
@@ -31,25 +26,14 @@ import double_1 from '../../photos/new_Photo/Double/Mobilka.png';
 import double_2 from '../../photos/new_Photo/Double/mobilkaShelf1.png';
 import double_3 from '../../photos/new_Photo/Double/MobilrfShelf2.png';
 
-import bord_1_1 from '../../photos/new_Photo/маркерная/main.png';
-import bord_1_2 from '../../photos/new_Photo/маркерная/XlineShelf.png';
-import bord_1_3 from '../../photos/new_Photo/маркерная/NewXline.png';
-
-import bord_1_4 from '../../photos/new_Photo/пробковая/main.png';
-import bord_1_5 from '../../photos/new_Photo/пробковая/CorcXline.png';
-import bord_1_6 from '../../photos/new_Photo/пробковая/CorcCorner.png';
-
-import bord_1_7 from '../../photos/new_Photo/текстильная/main.png';
-import bord_1_8 from '../../photos/new_Photo/текстильная/TextilXline.png';
-import bord_1_9 from '../../photos/new_Photo/текстильная/TextilCorner.png';
-import bord_1_10_1 from '../../photos/new_Photo/текстильная/цуа.png';
-import bord_1_10_2 from '../../photos/new_Photo/текстильная/43443.png';
-
-
-import ProductWithLegs from "./Product/Product";
+import Products from "./Product/Product";
 import Notice from "../notice/Notice";
+import {useSelector} from "react-redux";
 
 const CatalogOfProducts = () =>{
+
+    const languageData = useSelector(state=>state.languageData);
+
     const [activeFirs,setStatus] = useState(true)
 
     const ProductsWithLegsArr =[
@@ -58,20 +42,20 @@ const CatalogOfProducts = () =>{
             price: 1999,
             newPrice:1799,
             discount:'-10%',
-            title:'Суперцена',
-            action:'Акция! Альбом 64х90 см, 20 листов в подарок!',
+            title:languageData.Products.Slide.title[languageData.indexOfLanguage],
+            action:languageData.Products.Slide.action[languageData.indexOfLanguage],
             img:[
                 {src:slide_2},
                 {src:slide_1},
                 {src:slide_3},
             ],
             description:[
-                'Размеры поверхности 70 x 100 см',
-                'Держатель для альбомов с прижимной планкой на пружине',
-                'Передвижные крючки для альбомов',
-                'Рама S-line',
-                'Устойчивые профилированные ноги',
-                'Поверхность от Arcelor (Германия)',
+                languageData.Products.Slide.description.first[languageData.indexOfLanguage],
+                languageData.Products.Slide.description.second[languageData.indexOfLanguage],
+                languageData.Products.Slide.description.third[languageData.indexOfLanguage],
+                languageData.Products.Slide.description.fourth[languageData.indexOfLanguage],
+                languageData.Products.Slide.description.fifth[languageData.indexOfLanguage],
+                languageData.Products.Slide.description.sixth[languageData.indexOfLanguage],
             ],
             amount:1,
         },
@@ -80,21 +64,21 @@ const CatalogOfProducts = () =>{
             price:2399,
             newPrice:0,
             discount:'',
-            title:'Хит продаж',
-            action:'Акция! Альбом 64х90 см, 20 листов в подарок!',
+            title:languageData.Products.Training.title[languageData.indexOfLanguage],
+            action:languageData.Products.Training.action[languageData.indexOfLanguage],
             img:[
                 {src:training_1},
                 {src:training_2},
                 {src:training_3},
             ],
             description:[
-                'Размеры поверхности 70 x 100 см',
-                'Держатель для альбомов с прижимной планкой на пружине',
-                'Передвижные крючки для альбомов',
-                'Два дополнительных «крыла» для отдельных листов',
-                'Устойчивые профилированные ноги',
-                'Рама S-line',
-                'Поверхность от Arcelor (Германия)',
+                languageData.Products.Training.description.first[languageData.indexOfLanguage],
+                languageData.Products.Training.description.second[languageData.indexOfLanguage],
+                languageData.Products.Training.description.third[languageData.indexOfLanguage],
+                languageData.Products.Training.description.fourth[languageData.indexOfLanguage],
+                languageData.Products.Training.description.fifth[languageData.indexOfLanguage],
+                languageData.Products.Training.description.sixth[languageData.indexOfLanguage],
+                languageData.Products.Training.description.seventh[languageData.indexOfLanguage],
             ],
             amount:1,
         },
@@ -104,7 +88,7 @@ const CatalogOfProducts = () =>{
             newPrice:0,
             discount:'',
             title:'',
-            action:'Акция! Альбом 64х90 см, 20 листов в подарок!',
+            action:languageData.Products.Standard.action[languageData.indexOfLanguage],
             img:[
                 {src:standart_1},
                 {src:standart_2},
@@ -112,11 +96,10 @@ const CatalogOfProducts = () =>{
                 {src:standart_4},
             ],
             description:[
-                'Размеры поверхности 70 x 100 см',
-                'Держатель для альбомов передвижные крючки с защитой от падения альбома',
-                'Устойчивые профилированные ноги',
-                'Стальная рама',
-                'Поверхность от Arcelor (Германия)',
+                languageData.Products.Standard.description.first[languageData.indexOfLanguage],
+                languageData.Products.Standard.description.second[languageData.indexOfLanguage],
+                languageData.Products.Standard.description.third[languageData.indexOfLanguage],
+                languageData.Products.Standard.description.fourth[languageData.indexOfLanguage],
             ],
             amount:1,
 
@@ -127,7 +110,7 @@ const CatalogOfProducts = () =>{
             newPrice:0,
             discount:'',
             title:'',
-            action:'Акция! Альбом 64х90 см, 20 листов в подарок!',
+            action:languageData.Products.Mobile.action[languageData.indexOfLanguage],
             img:[
                 {src:mobile_1},
                 {src:mobile_2},
@@ -136,13 +119,13 @@ const CatalogOfProducts = () =>{
                 {src:mobile_5},
             ],
             description:[
-                'Размеры поверхности 70 x 100 см',
-                'Регулировка наклона поверхности',
-                'Держатель для альбомов с прижимной планкой на пружине',
-                'Передвижные крючки для альбомов',
-                'Устойчиая опора имеет три колеса с тормозом ',
-                'Рама S-line',
-                'Поверхность от Arcelor (Германия)',
+                languageData.Products.Mobile.description.first[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.second[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.third[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.fourth[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.fifth[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.sixth[languageData.indexOfLanguage],
+                languageData.Products.Mobile.description.seventh[languageData.indexOfLanguage],
             ],
             amount:1,
         },
@@ -152,165 +135,38 @@ const CatalogOfProducts = () =>{
             newPrice:0,
             discount:'',
             title:'',
-            action:'Акция! Альбом 64х90 см, 20 листов в подарок!',
+            action:languageData.Products.Double.action[languageData.indexOfLanguage],
             img:[
                 {src:double_1},
                 {src:double_2},
                 {src:double_3},
             ],
             description:[
-                'Размеры поверхности 100 x 150 см',
-                'Держатель для альбомов с прижимной планкой на пружине',
-                'Устойчивые профилированные четыри ноги',
-                'Передвижные крючки для альбомов',
-                'Рама S-line',
-                'Поверхность от Arcelor (Германия)',
-
+                languageData.Products.Double.description.first[languageData.indexOfLanguage],
+                languageData.Products.Double.description.second[languageData.indexOfLanguage],
+                languageData.Products.Double.description.third[languageData.indexOfLanguage],
+                languageData.Products.Double.description.fourth[languageData.indexOfLanguage],
+                languageData.Products.Double.description.fifth[languageData.indexOfLanguage],
             ],
             amount:1,
         },
     ];
 
-    const BlackBord =[
-        {
-            name:'Маркерная',
-            price:749,
-            newPrice:0,
-            discount:'',
-            title:'Хит продаж',
-            action:'Акция! Набор магнитов для доски 25 мм, 6 шт в подарок!',
-            size:[
-                {value:'65х100 см'},
-                {value:'90х120 см'},
-                {value:'100х150 см'},
-                {value:'100х180 см'},
-            ],
-            colors:[
-                {
-                    color:'',
-                    arr:[
-                        {src:bord_1_1},
-                        {src:bord_1_2},
-                        {src:bord_1_3},
-                    ],
-                },
-            ],
-            description:[
-                'Передвижная полка для маркеров',
-                'Скрытое крепление в углах',
-                'Поверхность от Arcelor (Германия)',
-
-            ],
-            amount:1,
-        },
-        {
-            name:'Текстильная',
-            price:649,
-            newPrice:0,
-            discount:'',
-            title:'',
-            action:'Акция! Булавки цветные в подарок!',
-            size:[
-                {value:'65х100 см'},
-                {value:'90х120 см'},
-                {value:'100х150 см'},
-                {value:'100х180 см'},
-            ],
-            colors:[
-                {   color:'#29458E',
-
-                    arr:[
-                        {src:bord_1_10_2},
-                        {src:bord_1_10_1},
-                    ],
-                },
-                {
-                    color:'#CCCCCC',
-                    arr:[
-                        {src:bord_1_7},
-                        {src:bord_1_8},
-                        {src:bord_1_9}
-                    ],
-                }
-            ],
-            description:[
-                'Поверхность из специального текстиля',
-                'Скрытое крепление в углах',
-                'Рама S-line',
-            ],
-            amount:1,
-        },
-        {
-            name:'Пробковая',
-            price:715,
-            newPrice:649,
-            discount:'- 10%',
-            title:'Суперцена',
-            action:'Акция! Булавки цветные в подарок!',
-            size:[
-                {value:'65х100 см'},
-                {value:'90х120 см'},
-                {value:'100х150 см'},
-                {value:'100х180 см'},
-            ],
-            colors:[
-                {
-                    color:'',
-                    arr:[
-                        {src:bord_1_4},
-                        {src:bord_1_5},
-                        {src:bord_1_6},
-                    ],
-                },
-            ],
-            description:[
-                'Поверхность из натуральной пробки',
-                'Скрытое крепление в углах',
-                'Рама S-line',
-            ],
-            amount:1,
-        },
-
-    ];
     const [indexOfMainPhoto, setIndexOfMainPhoto] = useState(0);
 
     const catalogOfProducts = ProductsWithLegsArr.map((item)=>{
-        return <ProductWithLegs data={item} kindOfProduct={true} indexOfMainPhoto={indexOfMainPhoto}
+        return <Products data={item} kindOfProduct={true} indexOfMainPhoto={indexOfMainPhoto}
                                 setIndexOfMainPhoto={setIndexOfMainPhoto}/>
     });
 
-    const catalogOfBord = BlackBord.map((item)=>{
-        return <ProductWithLegs data={item} kindOfProduct={false} setStatus={setStatus}/>
-    });
-
-    const ShowProductWithLeg = () =>{
-        return(
-            <div className={CatalogStyle.container}>
-                <Notice setStatus={setStatus} activeFirs={activeFirs}/>
-                <div className={CatalogStyle.content}>
-                    {catalogOfProducts}
-                </div>
-            </div>
-        )
-    }
-
-    const ShowProductBord = () =>{
-        return(
-            <div className={CatalogStyle.container}>
-                <Notice setStatus={setStatus} activeFirs={activeFirs}/>
-                <div className={CatalogStyle.content_Bord}>
-                    {catalogOfBord}
-                </div>
-            </div>
-        )
-    }
-
-    if(activeFirs){
-        return ShowProductWithLeg();
-    }
-    else {
-        return ShowProductBord();
-    }
+   return(
+       <div className={CatalogStyle.container} name="CatalogOfProducts">
+           <Notice setStatus={setStatus} activeFirs={activeFirs}/>
+           <div className={CatalogStyle.content}>
+               {catalogOfProducts}
+           </div>
+       </div>
+   )
 }
 
 export default CatalogOfProducts;

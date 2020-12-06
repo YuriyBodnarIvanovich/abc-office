@@ -5,7 +5,7 @@
         width: 100%;
         height: 80px;
         display: grid;
-        grid-template-columns: 0.4fr;
+        grid-template-columns: 0.6fr;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.7);;
         box-sizing: border-box;
@@ -41,7 +41,19 @@
         display: flex;
         flex-direction: row;
     }
-
+    .catalog a{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 10px;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+    .catalog a:hover{
+        cursor: pointer;
+    }
     .catalog p{
         font-family: SF Pro Display;
         font-style: normal;
@@ -101,9 +113,13 @@
         margin-left: 43px;
         width: 51px;
         height: 17px;
-        color: white;
+        color: #B8B8B8;
         display: flex;
         flex-direction: row;
+    }
+
+    .active{
+        color: white;
     }
 
     /*.changeLanguage p{*/
@@ -128,6 +144,7 @@
         height: 15px;
         margin-top: 18px;
         margin-left: 5px;
+        margin-right: 5px;
     }
 
     .numberOfPhone{
@@ -245,10 +262,24 @@
     }
 
     .catalog{
+        width: 500px;
         color: white;
         margin-left: 10px;
         display: flex;
         flex-direction: row;
+    }
+    .catalog a{
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 10px;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+    .catalog a:hover{
+        cursor: pointer;
     }
 
     .catalog p{
@@ -285,6 +316,7 @@
         height: 17px;
         margin-top: 17px;
         margin-left: 5px;
+        margin-right: 5px;
     }
 
     .numberOfPhone{

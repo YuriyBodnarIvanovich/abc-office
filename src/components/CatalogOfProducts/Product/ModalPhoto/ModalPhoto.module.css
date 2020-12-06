@@ -316,25 +316,25 @@
         justify-content: center;
     }
 
-    .forImg{
-        width: 100%;
-        /*display: grid;*/
-        /*grid-template-columns: 0.6fr;*/
-        /*justify-content: center;*/
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    /*.forImg{*/
+    /*    width: 100%;*/
+    /*    !*display: grid;*!*/
+    /*    !*grid-template-columns: 0.6fr;*!*/
+    /*    !*justify-content: center;*!*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    justify-content: center;*/
 
-    }
+    /*}*/
 
-    .forImg img{
-        z-index: 5;
-        position: absolute;
-        margin-top: 50px;
-        width: 250px;
-        /*margin-left: 5%;*/
-        /*margin-bottom: 100px;*/
-    }
+    /*.forImg img{*/
+    /*    z-index: 5;*/
+    /*    position: absolute;*/
+    /*    margin-top: 50px;*/
+    /*    width: 250px;*/
+    /*    !*margin-left: 5%;*!*/
+    /*    !*margin-bottom: 100px;*!*/
+    /*}*/
 
     .forPrice{
         width: 100%;
